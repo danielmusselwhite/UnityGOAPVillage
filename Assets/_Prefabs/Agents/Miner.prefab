@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1034929593763730}
+  m_IsPrefabParent: 1
+--- !u!1 &1034929593763730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4972726729191482}
+  - component: {fileID: 212437607406310518}
+  - component: {fileID: 114077561137394606}
+  - component: {fileID: 114176051329135700}
+  - component: {fileID: 114075378944665746}
+  - component: {fileID: 114015635818508102}
+  - component: {fileID: 114793343235565286}
+  - component: {fileID: 114872937621025994}
+  - component: {fileID: 114381005696224774}
+  - component: {fileID: 114664274484875556}
+  - component: {fileID: 114538696529562358}
+  - component: {fileID: 114305785714596068}
+  - component: {fileID: 114433548890259940}
+  m_Layer: 0
+  m_Name: Miner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4972726729191482
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.02, y: -2.78, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114015635818508102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ec491710c081147ae63dfa221b5093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEatTime: 1
+  EatTime: 0
+  hungerPerFrame: 0.02
+  isHungry: 0
+--- !u!114 &114075378944665746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab0f7829716d68418dd8aec7cf73961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tool: {fileID: 0}
+  numLogs: 0
+  numFirewood: 0
+  numOre: 0
+  toolType: ToolPickaxe
+  numUncookedFood: 0
+  numCookedFood: 0
+  numOfTools: 0
+--- !u!114 &114077561137394606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b04ae4783dec5488fd70bd53ac76d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backpack: {fileID: 114075378944665746}
+  sleepTimer: {fileID: 114793343235565286}
+  hungerTimer: {fileID: 114015635818508102}
+  moveSpeed: 7
+--- !u!114 &114176051329135700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3d5de8018bc7d4c81dfaf15afa4319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114305785714596068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780df47874d5fd64898600b7942aeccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 3
+  target: {fileID: 0}
+  gatheringDuration: 2
+--- !u!114 &114381005696224774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb54fc6c836990a459b48a81668e2eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 0.1
+  target: {fileID: 0}
+  sleepingDuration: 5
+--- !u!114 &114433548890259940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b2a1801f1002b4db97bf830167769a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 1
+  target: {fileID: 0}
+--- !u!114 &114538696529562358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1680090e51fd15c41b6017e9f1189d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 1
+  target: {fileID: 0}
+  miningDuration: 1
+--- !u!114 &114664274484875556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14859f46f46078047aa37d9cb907cad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 1
+  target: {fileID: 0}
+--- !u!114 &114793343235565286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16644b0065c1fd5409044e32dd4d1874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSleepTime: 1
+  sleepTime: 0
+  tirednessPerFrame: 0.06
+  isTired: 0
+--- !u!114 &114872937621025994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e225d0980ac0604ab4668d1b73f1cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 0.1
+  target: {fileID: 0}
+  eatingDuration: 3
+--- !u!212 &212437607406310518
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034929593763730}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: f50f4d25de1cedd4a9754ad53343f106, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.33, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
